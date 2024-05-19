@@ -23,5 +23,5 @@ update_interval is in seconds, if you leave language unset it defaults to englis
 
 # Screenshots
 
-![current weather](./openmeteo1.jpg)
-![... with tooltip](./openmeteo2.jpg)
+![current weather](./qtile-openmeteo1.jpg)
+![... with tooltip](./qtile-openmeteo2.jpg)
