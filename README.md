@@ -20,3 +20,8 @@ Place the file openmeteo.py in your .config/qtile directory and add the followin
         
 See defaults in openmeteo.py for a list of parameters.
 update_interval is in seconds, if you leave language unset it defaults to english.
+
+# Screenshots
+
+![Alt current weather](openmeteo1.jpg)
+![Alt with tooltip](openmeteo2.jpg)
