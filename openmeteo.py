@@ -153,7 +153,7 @@ class OpenMeteo(GenPollUrl, TooltipMixin):
         ),
         (
             "format_forecast",
-            "{day} {temp}°C {icon} {weather_details}",
+            "{day} {temp}°C {weather_details}",
             "Display format for forecast",
         ),
         (
@@ -242,10 +242,8 @@ class OpenMeteo(GenPollUrl, TooltipMixin):
             d['icon'] = self.wmo_symbols_day[str(data["daily"]["weathercode"][i])]
             d['weather_details'] = self.wmocode2text( data["daily"]["weathercode"][i] )
             fc = fc + self.format_forecast.format(**d) + "\n"
-            fc1 = fc1 + d['day'] + " " + str(d['temp'])  + " °C " + d['weather_details'] + "\n"
+
         fc = fc[:-1] # cut last newline
-        fc1 = fc1[:-1] # cut last newline
-        logger.warning( fc )
         self.tooltip_text = fc
 
         return self.format.format(**data)
